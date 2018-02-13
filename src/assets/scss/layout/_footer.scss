@@ -1,0 +1,38 @@
+
+.footer {
+    position: relative;
+    .subscribe {
+        background-color: #A8C13B;
+        color: #fff;
+        .subscribe-form {
+            position: relative;
+            .form-control {
+                font-size: 1rem;
+                background-color: transparent;
+                background-clip: padding-box;
+                border: 1px solid #C1D572;
+                border-radius: 50px;
+                color: #fff;
+            }
+            input {
+                padding: 15px 133px 15px 30px;
+            }
+            button {
+                position: absolute;
+                top: 3px;
+                right: 3px;
+                background-color: #fff;
+                color: $accent-color;
+                border: none;
+                padding: 15px 30px;
+                &:focus {
+                    background-color: $accent-color !important;
+                    border-color: $accent-color !important;
+                }
+            }
+        }
+    }
+    .footer-container {
+        min-height: 200px;
+    }
+}

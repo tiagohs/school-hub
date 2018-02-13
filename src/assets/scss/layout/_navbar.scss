@@ -1,0 +1,27 @@
+
+.navbar {
+    &.navbar-top-fixed {
+        padding: 20px 0;
+        a {
+            font-size: 12px;
+        }
+
+        .social-btns {
+            .search {
+                color: $text-secondary-color;
+                font-size: 14px;
+                margin-right: 20px; 
+            }
+            .btn-social {
+                width: 25px;
+                height: 25px;
+            }
+        }
+        
+        .link-inverse {
+            padding-left: 20px;
+            padding-right: 10px;
+            color: $text-secondary-color;
+        }
+    }
+}

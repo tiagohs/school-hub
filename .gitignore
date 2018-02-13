@@ -1,0 +1,28 @@
+# ignore files extensions
+*.diff
+*.err
+*.orig
+*.log
+*.rej
+*.swo
+*.swp
+*.zip
+*.vi
+*.psd
+*.sass-cache
+ai-cache/
+
+
+# OS / Editor Files
+.DS_Store
+Thumbs.db
+*.sublime-project
+*.sublime-workspace
+
+# files and folders
+.hg
+.svn
+.CVS
+/layout
+node_modules
+/.project

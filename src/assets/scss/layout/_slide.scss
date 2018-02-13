@@ -1,0 +1,25 @@
+
+.vertical-slide-container {
+    position: relative;
+    padding: 30px 0;
+    .top-arrow, .bottom-arrow {
+        position: absolute;
+        left: 50%;
+        margin-left: -15px;
+        &.slick-disabled {
+            cursor: default;
+            opacity: .65;
+        }
+    }
+    .top-arrow {
+        top: 0;
+    }
+    .bottom-arrow {
+        bottom: 0;
+    }
+}
+.slick-track, .slick-slide {
+    &:focus {
+        outline: none;
+    }
+}

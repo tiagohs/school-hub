@@ -1,0 +1,46 @@
+
+
+.btn {
+    font-family: 'Raleway Regular';
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-size: 12px;
+    &.btn-primary {
+        @include buttons-variant($button-bg-color, $button-border-color, $button-text-color, 
+                                 $button-select-bg-color, $button-select-bg-color, $button-text-color, $button-focus-box-shadow);
+    }
+
+    &.btn-secondary {
+        @include buttons-variant($button-secondary-bg-color, $button-secondary-border-color, $button-text-secondary-color, 
+                                 $button-secondary-select-bg-color, $button-secondary-select-bg-color, $button-text-secondary-color, $button-secondary-focus-box-shadow);
+    }
+
+    &.btn-outline-primary {
+        @include buttons-variant('transparent', $button-border-color, $button-text-color, 
+                                 $button-select-bg-color, $button-select-bg-color, $button-text-color, $button-focus-box-shadow);
+    }
+
+    &.btn-social {
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        @include buttons-variant($button-bg-color, $button-border-color, $button-text-color, 
+                                 $button-select-bg-color, $button-select-bg-color, $button-text-color, $button-focus-box-shadow);
+    }
+}
+
+.navbar-toggler {
+    border: none;
+
+    .fa {
+        font-size: 26px;
+        color: #fff;
+    }  
+    &:focus {
+        outline:0;
+    }
+}

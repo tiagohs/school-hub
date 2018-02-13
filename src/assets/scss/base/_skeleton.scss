@@ -1,0 +1,39 @@
+
+
+body {
+    font-family: $font-family-base;
+    background: $bg-color;
+    color: $text-color;
+}
+
+a {
+    color: $link-color;
+    &:hover, &:focus, &:active {
+        color: $link-hover-color;
+        text-decoration: underline solid $accent-color;
+    }
+}
+
+.ft-bold {
+    font-weight: bold;
+}
+
+.ft-secondary {
+    color: $text-secondary-color;
+}
+
+.ft-small {
+    font-size: 12px;
+}
+
+.ft-medium {
+    font-size: 14px;
+}
+
+.img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+

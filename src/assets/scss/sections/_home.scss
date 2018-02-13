@@ -1,0 +1,109 @@
+
+.home {
+    min-height: 600px;
+    background: black;
+    position: relative;
+    .navbar {
+        position: absolute;
+        top: 65px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 65px;
+        background: transparent;
+        z-index: 10000;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 65px;
+            background-color: $primary-color;
+            opacity: 0.6;
+            z-index: -1;
+        }
+        .navbar-brand {
+            color: $brand-color;
+        }
+        .navbar-nav {
+            margin-right: 90px;
+            .nav-item {
+                .nav-link {
+                    color: $nav-link-text-color;
+                    font-size: 12px;
+                    text-transform: uppercase;
+                    
+                    &:hover, &:focus, &.active, &:active  {
+                        color: $nav-link-text-hover-color;
+                        outline:0;
+                    }
+                }
+                &.active {
+                    .nav-link {
+                        color: $nav-link-text-hover-color;
+                    }
+                }
+            }
+        }   
+        .btn-contact {
+            font-size: 35px;
+            border-radius: 0;
+            height: 100%;
+            position: absolute;
+            right: 25px;
+            width: 60px;
+        }
+        &.header-menu-fixed {
+            position: fixed;
+            top: 0;
+            background-color: $primary-color;
+        }     
+    }
+    .home-content {
+        color: #fff;
+        .welcome-msg {
+            position: absolute;
+            bottom: 30px;
+            padding: 0 330px 0 10px;
+        }
+        .register-container {
+            width: 265px;
+            position: absolute;
+            bottom: -54px;
+            right: 32px;
+            .register-header {
+                height: 145px;
+                padding: 20px;
+                background-color: $accent-color;
+                transition: linear 0.3s all;
+                h3 {
+                    margin-bottom: 0;
+                }
+            }
+            .register-body {
+                background-color: $primary-color;
+                padding: 20px;
+            }
+            &:hover {
+                .register-header {
+                    transform: scale(1.04) translateY(-4px);
+                }
+            }
+        }
+    }
+    &:before {
+        content: '';
+        background-image: url(/assets/img/school-1.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        position: absolute;
+        width: 100%;
+        height: 600px;
+        top: 0;
+        left: 0;
+        right: 0;
+        opacity: 0.5;
+    }
+}

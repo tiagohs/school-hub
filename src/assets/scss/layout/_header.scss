@@ -1,0 +1,17 @@
+.header {
+    .header-menu {
+        position: absolute;
+        top: 0;
+        background: $primary-color;
+        left: 0;
+        right: 0;
+        z-index: 9000;
+        
+        &.header-menu-fixed {
+            top: 0;
+            background: $primary-color;
+        }
+
+    }
+    
+}

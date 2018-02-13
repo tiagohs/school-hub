@@ -1,0 +1,33 @@
+
+
+.form-group {
+    .form-control {
+        @include input-borders(null, 0.695rem, 1.8rem);
+        &:focus, &:active {
+            border: none;
+            outline: 0;
+            box-shadow: none;
+            border-bottom: 1px solid $accent-color;
+        }
+    }
+}
+
+.input-group {
+    .form-control {
+        @include input-borders('left', 0.695rem, 0.76rem);
+        &:focus {
+            outline: none;
+            box-shadow: none;
+        }
+    }
+    .input-group-text {
+        background: $text-color;
+
+        @include input-borders('right', 0.695rem, 0.76rem);
+        &.fa {
+            display: flex;
+            color: $text-secondary-color;
+            font-size: 20px;
+        }
+    }
+}

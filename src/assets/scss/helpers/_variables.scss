@@ -1,0 +1,65 @@
+
+
+/**************** PATHS ******************/
+
+$font-face-url:                         '../fonts';
+
+/**************** COLORS ******************/
+
+/* Theme Default Colors */
+
+$primary-color:                                 #0F1527     !default;
+$primary-light-color:                           rgb(45, 57, 92)     !default;
+$primary-dark-color:                            #020D17     !default;
+$accent-color:                                  #EF6C00     !default;
+$accent-dark-color:                             #e26702     !default;
+$text-color:                                    #03070a     !default;
+$text-light-color:                              #15181a     !default;
+$text-secondary-color:                          #b9bbbc     !default;
+
+$bg-color:                                      #fff    !default;
+$brand-color:                                   #fff    !default;
+
+$link-color:                                    #EF6C00       !default;  
+$link-hover-color:                              #e26702       !default;
+
+/* Material Design Colors */
+
+$material-red:                                  #F44336     !default;
+$material-purple:                               #9C27B0     !default;
+$material-blue:                                 #3F51B5     !default;
+$material-gleen:                                #009688     !default;
+
+/* BUTTONS */
+
+$button-bg-color:                                 $accent-color         !default;
+$button-select-bg-color:                          $accent-dark-color    !default;
+$button-focus-box-shadow:                       rgba(131, 76, 32, 0.5)  !default;
+$button-border-color:                             $accent-color         !default;
+
+$button-secondary-bg-color:                       $text-color           !default;
+$button-secondary-select-bg-color:                $primary-color        !default;
+$button-secondary-focus-box-shadow:             rgba(13,26,35, 0.5)   !default;
+$button-secondary-border-color:                   $text-color           !default;
+
+$button-text-color:                             #fff;
+$button-text-secondary-color:                     $text-color;  
+
+/* NAVBAR */
+
+$nav-link-text-color:                             #fff                  !default;
+$nav-link-text-hover-color:                         $accent-color         !default;
+
+/*********************** SCREENS SIZE *********************/
+
+$breakpoints: (
+    xs:        0,
+    sm:        576px,
+    md:        768px,
+    lg:        992px,
+    xl:        1200px,
+) !default;
+
+/*********************** TYPOGRAPHY *********************/
+
+$font-family-base:          'Poppins', sans-serif, Arial, "Helvetica Neue", "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
