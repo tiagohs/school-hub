@@ -33,6 +33,58 @@
         }
     }
     .footer-container {
-        min-height: 200px;
+        background-color: $primary-color;
+        color: #fff;
+        .contact-form-item {
+            small {
+                color: $material-red;
+            }
+            .fa {
+                font-size: 40px;
+                color: $material-red;
+            }
+
+        }
+        .footer-links {
+            small {
+                color: $text-secondary-color
+            }
+            h5 {
+                position: relative;
+                &:before {
+                    content: '';
+                    width: 50px;
+                    height: 2px;
+                    background-color: $accent-color;
+                    position: absolute;
+                    bottom: -4px
+                }
+            }
+            ul {
+                list-style: none;
+                -webkit-padding-start: 0;
+                li {
+                    padding: 5px 0;
+                    a {
+                        font-size: 12px;
+                        color: $text-secondary-color;
+                    }
+                    .courses-img {
+                        width: 50px;
+                        height: 50px;
+                        img {
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer-credits {
+        padding: 20px 0;
+        background-color: $primary-dark-color;
+        text-align: center;
+        color: $text-secondary-color;
     }
 }

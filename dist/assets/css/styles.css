@@ -110,15 +110,15 @@ a {
       color: #fff !important; }
   .btn.btn-social {
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 25px;
+    height: 25px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
         justify-content: center;
     -ms-flex-align: center;
         align-items: center;
-    font-size: 20px;
+    font-size: 14px;
     background-color: #EF6C00;
     border-color: #EF6C00;
     color: #fff; }
@@ -188,9 +188,6 @@ a {
     color: #b9bbbc;
     font-size: 14px;
     margin-right: 20px; }
-  .navbar.navbar-top-fixed .social-btns .btn-social {
-    width: 25px;
-    height: 25px; }
   .navbar.navbar-top-fixed .link-inverse {
     padding-left: 20px;
     padding-right: 10px;
@@ -224,7 +221,43 @@ a {
           background-color: #EF6C00 !important;
           border-color: #EF6C00 !important; }
   .footer .footer-container {
-    min-height: 200px; }
+    background-color: #0F1527;
+    color: #fff; }
+    .footer .footer-container .contact-form-item small {
+      color: #F44336; }
+    .footer .footer-container .contact-form-item .fa {
+      font-size: 40px;
+      color: #F44336; }
+    .footer .footer-container .footer-links small {
+      color: #b9bbbc; }
+    .footer .footer-container .footer-links h5 {
+      position: relative; }
+      .footer .footer-container .footer-links h5:before {
+        content: '';
+        width: 50px;
+        height: 2px;
+        background-color: #EF6C00;
+        position: absolute;
+        bottom: -4px; }
+    .footer .footer-container .footer-links ul {
+      list-style: none;
+      -webkit-padding-start: 0; }
+      .footer .footer-container .footer-links ul li {
+        padding: 5px 0; }
+        .footer .footer-container .footer-links ul li a {
+          font-size: 12px;
+          color: #b9bbbc; }
+        .footer .footer-container .footer-links ul li .courses-img {
+          width: 50px;
+          height: 50px; }
+          .footer .footer-container .footer-links ul li .courses-img img {
+            width: 100%;
+            object-fit: cover; }
+  .footer .footer-credits {
+    padding: 20px 0;
+    background-color: #020D17;
+    text-align: center;
+    color: #b9bbbc; }
 
 .header .header-menu {
   position: absolute;
@@ -285,6 +318,15 @@ a {
       z-index: -1; }
     .home .navbar .navbar-brand {
       color: #fff; }
+    .home .navbar .navbar-collapse {
+      background-color: #0F1527;
+      margin-left: -14px;
+      padding-left: 20px; }
+      @media (min-width: 992px) {
+        .home .navbar .navbar-collapse {
+          background-color: transparent;
+          margin-left: 0;
+          padding-left: 0; } }
     .home .navbar .navbar-nav {
       margin-right: 90px; }
       .home .navbar .navbar-nav .nav-item .nav-link {
@@ -303,6 +345,9 @@ a {
       position: absolute;
       right: 25px;
       width: 60px; }
+      @media (max-width: 992px) {
+        .home .navbar .btn-contact {
+          display: none; } }
     .home .navbar.header-menu-fixed {
       position: fixed;
       top: 0;
@@ -311,13 +356,23 @@ a {
     color: #fff; }
     .home .home-content .welcome-msg {
       position: absolute;
-      bottom: 30px;
-      padding: 0 330px 0 10px; }
+      bottom: 316px;
+      padding: 0 10px; }
+      @media (min-width: 768px) {
+        .home .home-content .welcome-msg {
+          bottom: 30px;
+          padding-right: 330px; } }
     .home .home-content .register-container {
       width: 265px;
       position: absolute;
       bottom: -54px;
-      right: 32px; }
+      right: 50%;
+      margin-right: -133px;
+      z-index: 10000; }
+      @media (min-width: 768px) {
+        .home .home-content .register-container {
+          right: 32px;
+          margin-right: 0; } }
       .home .home-content .register-container .register-header {
         height: 145px;
         padding: 20px;
@@ -407,9 +462,12 @@ a {
 .about-us .about-us-testimonials {
   min-height: 500px; }
   .about-us .about-us-testimonials .testimonials-slide-container .slick-dots {
-    top: -43px;
+    top: -13px;
     right: 0;
     text-align: right; }
+    @media (min-width: 768px) {
+      .about-us .about-us-testimonials .testimonials-slide-container .slick-dots {
+        top: -43px; } }
     .about-us .about-us-testimonials .testimonials-slide-container .slick-dots .slick-active button:before {
       color: #EF6C00; }
   .about-us .about-us-testimonials .testimonials-slide-container .testimonials-item .perfil-img {

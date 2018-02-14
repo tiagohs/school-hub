@@ -27,6 +27,20 @@
         .navbar-brand {
             color: $brand-color;
         }
+        .navbar-collapse {
+            
+                background-color: $primary-color;
+                margin-left: -14px;
+                padding-left: 20px;
+
+                @include breakpoint-up('lg') {
+                    background-color: transparent;
+                    margin-left: 0;
+                    padding-left: 0;
+                }
+            
+        }
+
         .navbar-nav {
             margin-right: 90px;
             .nav-item {
@@ -54,6 +68,10 @@
             position: absolute;
             right: 25px;
             width: 60px;
+
+            @include breakpoint-down('lg') {
+                display: none;
+            }
         }
         &.header-menu-fixed {
             position: fixed;
@@ -65,14 +83,26 @@
         color: #fff;
         .welcome-msg {
             position: absolute;
-            bottom: 30px;
-            padding: 0 330px 0 10px;
+            bottom: 316px;
+            padding: 0 10px;
+
+            @include breakpoint-up('md') {
+                bottom: 30px;
+                padding-right: 330px;
+            }
         }
         .register-container {
             width: 265px;
             position: absolute;
             bottom: -54px;
-            right: 32px;
+            right: 50%;
+            margin-right: -133px;
+            z-index: 10000;
+            
+            @include breakpoint-up('md') {
+                right: 32px;
+                margin-right: 0;
+            }
             .register-header {
                 height: 145px;
                 padding: 20px;

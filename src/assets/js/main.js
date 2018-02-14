@@ -49,12 +49,10 @@
         Scroll Sections
     *********************************/
 
-   $.scrollIt({
-    upKey: 38,             
-    downKey: 40,           
+   $.scrollIt({         
     easing: 'swing',      
     scrollTime: 600,       
-    activeClass: 'active', 
+    activeClass: 'active',  
   });
 
     
@@ -73,7 +71,19 @@
         slidesToScroll: 2,
         prevArrow: '#prev-arrow',
         nextArrow: '#next-arrow',
-        dots: true
+        dots: true,
+        touchMove: true,
+        responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true
+              }
+            }
+          ]
     });
 
     /******************************** 
@@ -86,7 +96,7 @@
     sr.reveal('.about-us', { duration: 400 });
     sr.reveal('.statistics', { duration: 400 });
     sr.reveal('.about-us-testimonials', { duration: 400 });
-
+    sr.reveal('.subscribe', { duration: 400 });
 })(jQuery);
 
     

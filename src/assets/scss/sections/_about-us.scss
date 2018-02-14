@@ -79,9 +79,13 @@
         min-height: 500px;
         .testimonials-slide-container {
             .slick-dots {
-                top: -43px;
+                top: -13px;
                 right: 0;
                 text-align: right;
+
+                @include breakpoint-up('md') {
+                    top: -43px;
+                }
                 .slick-active {
                     button {
                         &:before {
