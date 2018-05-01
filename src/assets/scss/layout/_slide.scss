@@ -23,3 +23,42 @@
         outline: none;
     }
 }
+
+.horizontal-slide-container {
+    .slick-dots {
+        top: -13px;
+        right: 0;
+        text-align: right;
+
+        @include breakpoint-up('md') {
+            top: -43px;
+        }
+        .slick-active {
+            button {
+                &:before {
+                    color: $accent-color;
+                }
+            }
+        }
+    }
+    .prev-arrow, .next-arrow {
+        position: absolute;
+        background: transparent;
+        border: none;
+        &:focus, &:active, &:hover {
+            background-color: transparent !important;
+            box-shadow: none !important;
+            border: none;
+        }
+        .fa {
+            color: $accent-color;
+            font-size: 20px;
+        }
+    }
+    .prev-arrow {
+        right: 35px;
+    }
+    .next-arrow {
+        right: 0;
+    }
+}

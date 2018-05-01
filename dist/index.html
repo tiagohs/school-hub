@@ -34,7 +34,7 @@
 		<header class="header">
     <div class="header-menu container-fluid">
         <nav class="navbar navbar-top-fixed navbar-light">
-            <a href="#">Have any question ?</a>
+            <a class="d-none d-sm-block" href="#">Have any question ?</a>
 
             <div class="social-btns d-flex justify-content-center align-items-center">
                 <a href="#" class="search">
@@ -54,10 +54,10 @@
                     <i class="fa fa-twitter" aria-hidden="true"></i>
                 </a>
 
-                <a href="" class="link-inverse">
+                <a href="" class="link-inverse" data-toggle="modal" data-target="#loginModal">
                     Login
                 </a>
-                <a href="" class="link-inverse">
+                <a href="" class="link-inverse" data-toggle="modal" data-target="#registerModal">
                     Register
                 </a>
             </div>
@@ -86,13 +86,10 @@
                         <a class="nav-link" href="#about-us">About Us</a>
                     </li>
                     <li class="nav-item" data-scroll-nav="2">
-                        <a class="nav-link" href="#portfolio">Courses</a>
+                        <a class="nav-link" href="#courses">Courses</a>
                     </li>
                     <li class="nav-item" data-scroll-nav="3">
-                        <a class="nav-link" href="#skills">Blog</a>
-                    </li>
-                    <li class="nav-item" data-scroll-nav="4">
-                        <a class="nav-link" href="#pricing">Contact Us</a>
+                        <a class="nav-link" href="#contact-us">Contact Us</a>
                     </li>
                 </ul>
 
@@ -103,6 +100,7 @@
         </nav> 
 
         <div class="home-content d-flex">
+            
             <div class="welcome-msg animate-plus"  data-animations="fadeInLeft">
                 <h2 class="ft-bold">We are the Best for Online Education</h2>
                 <button class="btn btn-primary">Enquire Now</button>
@@ -335,7 +333,7 @@
 
     <div class="about-us-testimonials container py-5">
         <h2 class="pl-3">Testimonials</h2>
-        <div class="testimonials-slide-container">
+        <div class="horizontal-slide-container">
             <div class="testimonials-slide" id="slide-horizontal" slides-to-show="2">
                 <div class="testimonials-item px-3 py-5 text-left">
                     <p>
@@ -416,9 +414,224 @@
 </div>
 		<!--========== END ABOUT-US SECTION ============-->
 
+		<!--========== COURSES SECTION ============-->
+		<div class="section courses" id="courses" data-scroll-index="2">
+
+    <div class="section-header text-center">
+        <h1>Courses</h1>
+        <small>Home / Courses</small>
+    </div>
+
+    <div class="courses-carrousel container py-5">
+        <div class="horizontal-slide-container">
+            <div class="courses-slide" id="slide-courses">
+                <div class="d-flex flex-column align-items-center">
+                    <div class="courses-item pb-3">
+                        <div class="item-img mr-2">
+                            <img src="/assets/img/web-design.jpg" />
+                        </div>
+                        <div class="d-flex flex-column align-items-center py-3">
+                            <strong>Professional Web Design</strong>
+                            <span class="py-1 ft-secondary">By Mark Johnson</span>
+                            <strong>$ 80,00</strong>
+                        </div>
+                    </div>
+
+                    <div class="courses-item">
+                        <div class="item-img mr-2">
+                            <img src="/assets/img/java.jpg" />
+                        </div>
+                        <div class="d-flex flex-column align-items-center py-3">
+                            <strong>How to Programming in Java</strong>
+                            <span class="py-1 ft-secondary">By Rafael Silva</span>
+                            <strong>$ 50,00</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column align-items-center">
+                    <div class="courses-item pb-3">
+                        <div class="item-img mr-2">
+                            <img src="/assets/img/react.jpg" />
+                        </div>
+                        <div class="d-flex flex-column align-items-center py-3">
+                            <strong>React + Redux</strong>
+                            <span class="py-1 ft-secondary">By Sophie Jackson</span>
+                            <strong>$ 80,00</strong>
+                        </div>
+                    </div>
+                    
+                    <div class="courses-item">
+                        <div class="item-img mr-2">
+                            <img src="/assets/img/web-design.jpg" />
+                        </div>
+                        <div class="d-flex flex-column align-items-center py-3">
+                            <strong>Professional Web Design</strong>
+                            <span class="py-1 ft-secondary">By Mark Johnson</span>
+                            <strong>$ 80,00</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column align-items-center">
+                    <div class="courses-item pb-3">
+                        <div class="item-img mr-2">
+                            <img src="/assets/img/java.jpg" />
+                        </div>
+                        <div class="d-flex flex-column align-items-center py-3">
+                            <strong>How to Programming in Java</strong>
+                            <span class="py-1 ft-secondary">By Rafael Silva</span>
+                            <strong>$ 50,00</strong>
+                        </div>
+                    </div>
+
+                    <div class="courses-item">
+                        <div class="item-img mr-2">
+                            <img src="/assets/img/react.jpg" />
+                        </div>
+                        <div class="d-flex flex-column align-items-center py-3">
+                            <strong>React + Redux</strong>
+                            <span class="py-1 ft-secondary">By Sophie Jackson</span>
+                            <strong>$ 80,00</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column align-items-center">
+                    <div class="courses-item pb-3">
+                        <div class="item-img mr-2">
+                            <img src="/assets/img/web-developer.jpg" />
+                        </div>
+                        <div class="d-flex flex-column align-items-center py-3">
+                            <strong>Web Developer I</strong>
+                            <span class="py-1 ft-secondary">By Tiago Silva</span>
+                            <strong>$ 120,00</strong>
+                        </div>
+                    </div>
+
+                    <div class="courses-item">
+                        <div class="item-img mr-2">
+                            <img src="/assets/img/web-design.jpg" />
+                        </div>
+                        <div class="d-flex flex-column align-items-center py-3">
+                            <strong>Professional Web Design</strong>
+                            <span class="py-1 ft-secondary">By Mark Johnson</span>
+                            <strong>$ 80,00</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column align-items-center">
+                    <div class="courses-item pb-3">
+                        <div class="item-img mr-2">
+                            <img src="/assets/img/web-design.jpg" />
+                        </div>
+                        <div class="d-flex flex-column align-items-center py-3">
+                            <strong>Professional Web Design</strong>
+                            <span class="py-1 ft-secondary">By Mark Johnson</span>
+                            <strong>$ 80,00</strong>
+                        </div>
+                    </div>
+
+                    <div class="courses-item">
+                        <div class="item-img mr-2">
+                            <img src="/assets/img/java.jpg" />
+                        </div>
+                        <div class="d-flex flex-column align-items-center py-3">
+                            <strong>How to Programming in Java</strong>
+                            <span class="py-1 ft-secondary">By Rafael Silva</span>
+                            <strong>$ 50,00</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column align-items-center">
+                    <div class="courses-item pb-3">
+                        <div class="item-img mr-2">
+                            <img src="/assets/img/react.jpg" />
+                        </div>
+                        <div class="d-flex flex-column align-items-center py-3">
+                            <strong>React + Redux</strong>
+                            <span class="py-1 ft-secondary">By Sophie Jackson</span>
+                            <strong>$ 80,00</strong>
+                        </div>
+                    </div>
+                    
+                    <div class="courses-item">
+                        <div class="item-img mr-2">
+                            <img src="/assets/img/web-design.jpg" />
+                        </div>
+                        <div class="d-flex flex-column align-items-center py-3">
+                            <strong>Professional Web Design</strong>
+                            <span class="py-1 ft-secondary">By Mark Johnson</span>
+                            <strong>$ 80,00</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column align-items-center">
+                    <div class="courses-item pb-3">
+                        <div class="item-img mr-2">
+                            <img src="/assets/img/java.jpg" />
+                        </div>
+                        <div class="d-flex flex-column align-items-center py-3">
+                            <strong>How to Programming in Java</strong>
+                            <span class="py-1 ft-secondary">By Rafael Silva</span>
+                            <strong>$ 50,00</strong>
+                        </div>
+                    </div>
+
+                    <div class="courses-item">
+                        <div class="item-img mr-2">
+                            <img src="/assets/img/react.jpg" />
+                        </div>
+                        <div class="d-flex flex-column align-items-center py-3">
+                            <strong>React + Redux</strong>
+                            <span class="py-1 ft-secondary">By Sophie Jackson</span>
+                            <strong>$ 80,00</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column align-items-center">
+                    <div class="courses-item pb-3">
+                        <div class="item-img mr-2">
+                            <img src="/assets/img/web-developer.jpg" />
+                        </div>
+                        <div class="d-flex flex-column align-items-center py-3">
+                            <strong>Web Developer I</strong>
+                            <span class="py-1 ft-secondary">By Tiago Silva</span>
+                            <strong>$ 120,00</strong>
+                        </div>
+                    </div>
+
+                    <div class="courses-item">
+                        <div class="item-img mr-2">
+                            <img src="/assets/img/web-design.jpg" />
+                        </div>
+                        <div class="d-flex flex-column align-items-center py-3">
+                            <strong>Professional Web Design</strong>
+                            <span class="py-1 ft-secondary">By Mark Johnson</span>
+                            <strong>$ 80,00</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="btn btn-primary prev-arrow" id="c-prev-arrow">
+                <i class="fa fa-chevron-circle-left" aria-hidden="true"></i>
+            </button>
+            <button type="button" class="btn btn-primary next-arrow" id="c-next-arrow">
+                <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+            </button>
+        </div>
+        
+    </div>
+</div>
+		<!--========== END COURSES SECTION ============-->
+
 		<!--========== FOOTER ============-->
 		<footer class="footer">
-    <div class="subscribe py-5">
+    <div class="subscribe py-5" id="contact-us" data-scroll-index="3">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 p-1">
@@ -448,8 +661,8 @@
                     <h5><strong>Get in Touch</strong></h5>
                     <small>We always here to help you.</small>
                 </div>
-                <div class="col-4 col-sm-4 col-md-3 d-flex align-items-center justify-content-center">
-                    <div class="contact-form-item d-flex">
+                <div class="col-6 col-sm-4 col-md-3 d-flex align-items-center justify-content-center">
+                    <div class="contact-form-item d-flex p-2">
                         <i class="fa fa-map-marker" aria-hidden="true"></i>
                         <div class="d-flex flex-column justify-content-center pl-2">
                             <span class="ft-medium">Get Appointment</span>
@@ -457,8 +670,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4 col-sm-4 col-md-3 d-flex align-items-center justify-content-center">
-                    <div class="contact-form-item d-flex">
+                <div class="col-6 col-sm-4 col-md-3 d-flex align-items-center justify-content-center">
+                    <div class="contact-form-item d-flex p-2">
                         <i class="fa fa-phone" aria-hidden="true"></i>
                         <div class="d-flex flex-column justify-content-center pl-2">
                             <span class="ft-medium">Contact Us</span>
@@ -466,8 +679,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4 col-sm-4 col-md-3 d-flex align-items-center justify-content-center">
-                    <div class="contact-form-item d-flex">
+                <div class="col-6 col-sm-4 col-md-3 d-flex align-items-center justify-content-center">
+                    <div class="contact-form-item d-flex p-2">
                         <i class="fa fa-bandcamp" aria-hidden="true"></i>
                         <div class="d-flex flex-column justify-content-center pl-2">
                             <span class="ft-medium">Take a School Tour</span>
@@ -477,7 +690,7 @@
                 </div>
             </div>
             <div class="row footer-links pt-5">
-                <div class="col-6 col-md-3 d-flex flex-column">
+                <div class="col-xs-6 col-sm-6 col-md-3 d-flex flex-column">
                     <h5><strong>School Hub</strong></h5>
                     <small class="py-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</small>
                     <small><strong>Phone</strong>: (21) 98456-5878</small>
@@ -499,7 +712,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-6 col-md-3">
+                <div class="col-xs-6 col-sm-6 col-md-3">
                     <h5 class="mb-3">Short Links</h5>
                     <ul>
                         <div class="row">
@@ -540,7 +753,7 @@
                         </div>
                     </ul>
                 </div>
-                <div class="col-6 col-md-3">
+                <div class="col-xs-6 col-sm-6 col-md-3">
                     <h5 class="mb-3">Short Links</h5>
                     <ul>
                         <li>
@@ -560,7 +773,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-6 col-md-3">
+                <div class="col-xs-6 col-sm-6 col-md-3">
                     <h5 class="mb-3">Recent Courses</h5>
                     <ul>
                         <li class="d-flex">
@@ -591,6 +804,110 @@
     </div>
 </footer>
 		<!--========== END FOOTER ============-->
+
+		<!--========== MODALS ============-->
+		
+		<!--========== LOGIN MODAL ============-->
+		
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Login School Hub</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="container-fluid">
+                <form class="form" method="POST" id="login-user-form">
+                    <div class="form-group">
+                        <label for="login-email">Email</label>
+                        <input type="email" class="form-control" name="login-email" id="login-email" placeholder="Your email address..." />
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">Password</label>
+                        <input type="password" class="form-control" name="login-password" id="login-password" placeholder="Your password..." />
+                    </div>
+
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="remember-me">
+                        <label class="form-check-label" for="remember-me">Remember-me</label>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-primary">Login</button>
+        </div>
+        </div>
+    </div>
+</div>
+		<!--========== END LOGIN MODAL  =======-->
+
+		<!--========== REGISTER MODAL ============-->
+		
+<div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Register School Hub</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="container-fluid">
+                <form class="form" method="POST" id="register-user-form">
+                    <div class="form-group">
+                        <label for="reg-name">Full Name*</label>
+                        <input type="text" class="form-control" name="reg-name" id="reg-name" placeholder="Your email address..." />
+                    </div>
+                    <div class="form-group">
+                        <label for="reg-email">Email*</label>
+                        <input type="email" class="form-control" name="reg-email" id="reg-email" placeholder="Your password..." />
+                    </div>
+                    <div class="form-group">
+                        <label for="reg-phone">Phone Number*</label>
+                        <input type="number" class="form-control" name="reg-phone" id="reg-phone" placeholder="(*DD) 99999-9999" />
+                    </div>
+                    <div class="form-group">
+                        <label for="reg-password">Password*</label>
+                        <input type="password" class="form-control" name="reg-password" id="reg-password" placeholder="Your password..." />
+                    </div>
+                    <div class="form-group">
+                        <label for="reg-password-confirm">Confirm Password*</label>
+                        <input type="password" class="form-control" name="reg-password-confirm" id="reg-password-confirm" placeholder="Confirm your password..." />
+                    </div>
+                    <div class="form-group">
+                        <label for="country">Select Country*</label>
+                        <select class="form-control" id="country">
+                            <option selected>Brazil</option>
+                            <option>United States</option>
+                            <option>Argentina</option>
+                            <option>China</option>
+                            <option>France</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="agree">
+                        <label class="form-check-label" for="agree">I agree to the School Hub <a href="#">Terms and Conditions</a></label>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-primary">Login</button>
+        </div>
+        </div>
+    </div>
+</div>
+		<!--========== END REGISTER MODAL  ====-->
+
+		<!--========== MODALS FOOTER ============-->
 
 		
 

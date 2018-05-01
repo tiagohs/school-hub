@@ -13,7 +13,12 @@
                 border: 1px solid #C1D572;
                 border-radius: 50px;
                 color: #fff;
+
+                &::placeholder {
+                    color: #dedede;
+                }
             }
+
             input {
                 padding: 15px 133px 15px 30px;
             }

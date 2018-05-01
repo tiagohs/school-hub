@@ -16,7 +16,7 @@
     }
 
     &.btn-outline-primary {
-        @include buttons-variant('transparent', $button-border-color, $button-text-color, 
+        @include buttons-variant('transparent', $button-border-color, $btn-outline-primary-text-color, 
                                  $button-select-bg-color, $button-select-bg-color, $button-text-color, $button-focus-box-shadow);
     }
 

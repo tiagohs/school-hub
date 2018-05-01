@@ -1,0 +1,58 @@
+
+<div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Register School Hub</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="container-fluid">
+                <form class="form" method="POST" id="register-user-form">
+                    <div class="form-group">
+                        <label for="reg-name">Full Name*</label>
+                        <input type="text" class="form-control" name="reg-name" id="reg-name" placeholder="Your email address..." />
+                    </div>
+                    <div class="form-group">
+                        <label for="reg-email">Email*</label>
+                        <input type="email" class="form-control" name="reg-email" id="reg-email" placeholder="Your password..." />
+                    </div>
+                    <div class="form-group">
+                        <label for="reg-phone">Phone Number*</label>
+                        <input type="number" class="form-control" name="reg-phone" id="reg-phone" placeholder="(*DD) 99999-9999" />
+                    </div>
+                    <div class="form-group">
+                        <label for="reg-password">Password*</label>
+                        <input type="password" class="form-control" name="reg-password" id="reg-password" placeholder="Your password..." />
+                    </div>
+                    <div class="form-group">
+                        <label for="reg-password-confirm">Confirm Password*</label>
+                        <input type="password" class="form-control" name="reg-password-confirm" id="reg-password-confirm" placeholder="Confirm your password..." />
+                    </div>
+                    <div class="form-group">
+                        <label for="country">Select Country*</label>
+                        <select class="form-control" id="country">
+                            <option selected>Brazil</option>
+                            <option>United States</option>
+                            <option>Argentina</option>
+                            <option>China</option>
+                            <option>France</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="agree">
+                        <label class="form-check-label" for="agree">I agree to the School Hub <a href="#">Terms and Conditions</a></label>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-primary">Login</button>
+        </div>
+        </div>
+    </div>
+</div>

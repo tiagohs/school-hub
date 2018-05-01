@@ -86,6 +86,54 @@
           ]
     });
 
+    $('#slide-courses').not('.slick-initialized').slick({
+        infinite: false,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        prevArrow: '#c-prev-arrow',
+        nextArrow: '#c-next-arrow',
+        dots: true,
+        touchMove: true,
+        responsive: [
+            {
+                breakpoint: 576,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                  infinite: true,
+                  dots: true
+                }
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 992,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+                breakpoint: 1200,
+                settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 3,
+                  infinite: true,
+                  dots: true
+                }
+              },
+          ]
+    });
+
     /******************************** 
         Scroll Reveal Configuration
     *********************************/
@@ -96,6 +144,7 @@
     sr.reveal('.about-us', { duration: 400 });
     sr.reveal('.statistics', { duration: 400 });
     sr.reveal('.about-us-testimonials', { duration: 400 });
+    sr.reveal('.courses', { duration: 400 });
     sr.reveal('.subscribe', { duration: 400 });
 })(jQuery);
 

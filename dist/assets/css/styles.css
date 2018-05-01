@@ -69,6 +69,9 @@ a {
   max-width: 100%;
   height: auto; }
 
+.modal {
+  z-index: 10000050; }
+
 /* LAYOUT */
 .btn {
   font-family: 'Raleway Regular';
@@ -100,7 +103,7 @@ a {
   .btn.btn-outline-primary {
     background-color: "transparent";
     border-color: #EF6C00;
-    color: #fff; }
+    color: #03070a; }
     .btn.btn-outline-primary:hover, .btn.btn-outline-primary:active {
       background-color: #e26702 !important;
       border-color: #e26702 !important;
@@ -207,6 +210,14 @@ a {
         border: 1px solid #C1D572;
         border-radius: 50px;
         color: #fff; }
+        .footer .subscribe .subscribe-form .form-control::-webkit-input-placeholder {
+          color: #dedede; }
+        .footer .subscribe .subscribe-form .form-control::-moz-placeholder {
+          color: #dedede; }
+        .footer .subscribe .subscribe-form .form-control:-ms-input-placeholder {
+          color: #dedede; }
+        .footer .subscribe .subscribe-form .form-control::placeholder {
+          color: #dedede; }
       .footer .subscribe .subscribe-form input {
         padding: 15px 133px 15px 30px; }
       .footer .subscribe .subscribe-form button {
@@ -291,6 +302,34 @@ a {
 .slick-track:focus, .slick-slide:focus {
   outline: none; }
 
+.horizontal-slide-container .slick-dots {
+  top: -13px;
+  right: 0;
+  text-align: right; }
+  @media (min-width: 768px) {
+    .horizontal-slide-container .slick-dots {
+      top: -43px; } }
+  .horizontal-slide-container .slick-dots .slick-active button:before {
+    color: #EF6C00; }
+
+.horizontal-slide-container .prev-arrow, .horizontal-slide-container .next-arrow {
+  position: absolute;
+  background: transparent;
+  border: none; }
+  .horizontal-slide-container .prev-arrow:focus, .horizontal-slide-container .prev-arrow:active, .horizontal-slide-container .prev-arrow:hover, .horizontal-slide-container .next-arrow:focus, .horizontal-slide-container .next-arrow:active, .horizontal-slide-container .next-arrow:hover {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    border: none; }
+  .horizontal-slide-container .prev-arrow .fa, .horizontal-slide-container .next-arrow .fa {
+    color: #EF6C00;
+    font-size: 20px; }
+
+.horizontal-slide-container .prev-arrow {
+  right: 35px; }
+
+.horizontal-slide-container .next-arrow {
+  right: 0; }
+
 /* SECTIONS */
 .home {
   min-height: 600px;
@@ -304,7 +343,7 @@ a {
     width: 100%;
     height: 65px;
     background: transparent;
-    z-index: 10000; }
+    z-index: 1000000; }
     .home .navbar:before {
       content: '';
       position: absolute;
@@ -357,11 +396,26 @@ a {
     .home .home-content .welcome-msg {
       position: absolute;
       bottom: 316px;
-      padding: 0 10px; }
+      padding: 0 10px;
+      left: 50%;
+      margin-left: -168px;
+      text-align: center; }
+      .home .home-content .welcome-msg h2 {
+        font-size: 1.5rem; }
+      @media (min-width: 424px) {
+        .home .home-content .welcome-msg {
+          margin-left: -232px; } }
       @media (min-width: 768px) {
         .home .home-content .welcome-msg {
           bottom: 30px;
-          padding-right: 330px; } }
+          margin-left: 10px;
+          padding-right: 0;
+          left: 0;
+          margin-left: 0;
+          text-align: initial; } }
+      @media (min-width: 992px) {
+        .home .home-content .welcome-msg h2 {
+          font-size: 2rem; } }
     .home .home-content .register-container {
       width: 265px;
       position: absolute;
@@ -461,39 +515,34 @@ a {
 
 .about-us .about-us-testimonials {
   min-height: 500px; }
-  .about-us .about-us-testimonials .testimonials-slide-container .slick-dots {
-    top: -13px;
-    right: 0;
-    text-align: right; }
-    @media (min-width: 768px) {
-      .about-us .about-us-testimonials .testimonials-slide-container .slick-dots {
-        top: -43px; } }
-    .about-us .about-us-testimonials .testimonials-slide-container .slick-dots .slick-active button:before {
-      color: #EF6C00; }
-  .about-us .about-us-testimonials .testimonials-slide-container .testimonials-item .perfil-img {
+  .about-us .about-us-testimonials .horizontal-slide-container .testimonials-item .perfil-img {
     width: 40px;
     height: 40px; }
-    .about-us .about-us-testimonials .testimonials-slide-container .testimonials-item .perfil-img img {
+    .about-us .about-us-testimonials .horizontal-slide-container .testimonials-item .perfil-img img {
       width: 100%;
       border-radius: 50%;
       object-fit: cover;
       -webkit-filter: grayscale(100%);
       filter: grayscale(100%); }
-  .about-us .about-us-testimonials .testimonials-slide-container .prev-arrow, .about-us .about-us-testimonials .testimonials-slide-container .next-arrow {
-    position: absolute;
-    background: transparent;
-    border: none; }
-    .about-us .about-us-testimonials .testimonials-slide-container .prev-arrow:focus, .about-us .about-us-testimonials .testimonials-slide-container .prev-arrow:active, .about-us .about-us-testimonials .testimonials-slide-container .prev-arrow:hover, .about-us .about-us-testimonials .testimonials-slide-container .next-arrow:focus, .about-us .about-us-testimonials .testimonials-slide-container .next-arrow:active, .about-us .about-us-testimonials .testimonials-slide-container .next-arrow:hover {
-      background-color: transparent !important;
-      box-shadow: none !important;
-      border: none; }
-    .about-us .about-us-testimonials .testimonials-slide-container .prev-arrow .fa, .about-us .about-us-testimonials .testimonials-slide-container .next-arrow .fa {
-      color: #EF6C00;
-      font-size: 20px; }
-  .about-us .about-us-testimonials .testimonials-slide-container .prev-arrow {
-    right: 35px; }
-  .about-us .about-us-testimonials .testimonials-slide-container .next-arrow {
-    right: 0; }
+
+.courses .courses-carrousel .courses-slide .courses-item {
+  max-width: 240px; }
+  .courses .courses-carrousel .courses-slide .courses-item .item-img {
+    width: 235px;
+    height: 300px; }
+    .courses .courses-carrousel .courses-slide .courses-item .item-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+
+.courses .courses-carrousel .slick-dots {
+  top: -43px !important; }
+
+.courses .courses-carrousel .prev-arrow {
+  right: 70px; }
+
+.courses .courses-carrousel .next-arrow {
+  right: 35px; }
 
 .animated {
   -webkit-animation-duration: 1s;

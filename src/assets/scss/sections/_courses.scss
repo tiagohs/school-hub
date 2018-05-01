@@ -1,0 +1,33 @@
+
+
+.courses {
+    .courses-carrousel {
+        .courses-slide {
+            .courses-item {
+                max-width: 240px;
+                .item-img {
+                    width: 235px;
+                    height: 300px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+
+        .slick-dots {
+            top: -43px !important;
+        }
+
+        .prev-arrow {
+            right: 70px;
+        }
+
+        .next-arrow {
+            right: 35px;
+        }
+    }
+}
