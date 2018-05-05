@@ -26,3 +26,4 @@ Thumbs.db
 /layout
 node_modules
 /.project
+package-lock.json
