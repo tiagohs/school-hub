@@ -24,6 +24,7 @@ Thumbs.db
 .svn
 .CVS
 /layout
+dist
 node_modules
 /.project
 package-lock.json

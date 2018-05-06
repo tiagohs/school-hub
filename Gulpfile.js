@@ -13,7 +13,6 @@ var gulp = require('gulp'),
     nunjucksRender = require('gulp-nunjucks-render'),
     cleanCSS = require('gulp-clean-css'),
     lr = require('tiny-lr'),
-    i18n = require('gulp-html-i18n'),
 	  server = lr();
 
 const browserSync = require('browser-sync').create();
@@ -68,23 +67,7 @@ gulp.task('pages', function() {
                 }
               }))
               .pipe(gulp.dest(folder.dist))
-              .pipe(i18n({
-                langDir: './lang',
-                defaultLang: 'en-US',
-                createLangDirs: true
-              }))
               .pipe(browserSync.stream());
-});
-
-// HTML - Apply Internationalization
-gulp.task('i18n', function() {
-  return gulp.src(folder.dist + "/index.html")
-             .pipe(i18n({
-                langDir: './lang',
-                createLangDirs: true
-             }))
-             .pipe(gulp.dest(folder.dist))
-             .pipe(browserSync.stream());
 });
 
 // CSS - Generate CSS concating all SCSS, and minify
@@ -150,8 +133,6 @@ gulp.task('serve', [
           'scripts', 
           'scripts-minify', 
           'pages', 
-          /*'i18n',
-          'images',  */
           'copy'], function() {
 
   gulp.watch(folder.styles.scss, ['styles']);
@@ -159,8 +140,6 @@ gulp.task('serve', [
   // Watch .html files
   gulp.watch([folder.html.src], ['pages']);
   gulp.watch([folder.html.srcTemplates], ['pages']);
-  /*gulp.watch([folder.html.srcTemplates], ['i18n']);
-  gulp.watch([folder.html.lang], ['i18n']);*/
 
   // Watch .js files
   gulp.watch(folder.scripts.src, ['scripts']);

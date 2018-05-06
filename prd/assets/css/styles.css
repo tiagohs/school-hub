@@ -437,7 +437,7 @@ a {
                 transform: scale(1.04) translateY(-4px); }
   .home:before {
     content: '';
-    background-image: url(/assets/img/school-1.jpg);
+    background-image: url(../../assets/img/school-1.jpg);
     background-attachment: fixed;
     background-size: cover;
     position: absolute;
@@ -496,7 +496,7 @@ a {
     content: '';
     height: 100%;
     position: absolute;
-    background-image: url("/assets/img/school-2.jpg");
+    background-image: url("../../assets/img/school-2.jpg");
     background-attachment: fixed;
     background-size: cover;
     opacity: 0.3;

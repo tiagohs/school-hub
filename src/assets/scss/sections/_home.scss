@@ -31,6 +31,7 @@
             
                 background-color: $primary-color;
                 margin-left: -14px;
+                margin-right: -14px;
                 padding-left: 20px;
 
                 @include breakpoint-up('lg') {
@@ -85,16 +86,10 @@
             position: absolute;
             bottom: 316px;
             padding: 0 10px;
-            left: 50%;
-            margin-left: -168px;
-            text-align: center;
+            left: 5px;
             
             h2 {
                 font-size: 1.5rem;
-            }
-
-            @media(min-width: 424px) {
-                margin-left: -232px;
             }
 
             @include breakpoint-up('md') {
@@ -103,7 +98,6 @@
                 padding-right: 0;
                 left: 0;
                 margin-left: 0;
-                text-align: initial;
             }
 
             @include breakpoint-up('lg') {
